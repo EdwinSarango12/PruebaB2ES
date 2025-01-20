@@ -8,7 +8,7 @@ public class GestionarCalificaciones extends JFrame {
     private JTextField cedulaField;
     private JTextField[] gradeFields;
     private JButton saveButton;
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/pruebab2";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "password";
 
