@@ -19,12 +19,12 @@ public class GestionarCalificaciones extends JFrame {
 
         JPanel panel = new JPanel();
         cedulaField = new JTextField(20);
-        gradeFields = new JTextField[5];  // Para 5 materias
+        gradeFields = new JTextField[5]; 
 
         panel.add(new JLabel("Cédula:"));
         panel.add(cedulaField);
 
-        // Añadimos los campos para ingresar las calificaciones
+        // Ingreso de califiaciones
         for (int i = 0; i < 5; i++) {
             panel.add(new JLabel("Materia " + (i + 1) + ":"));
             gradeFields[i] = new JTextField(5);
@@ -43,7 +43,7 @@ public class GestionarCalificaciones extends JFrame {
         double[] grades = new double[5];
         boolean valid = true;
 
-        // Validamos las calificaciones
+        // Validar calificaciones 
         for (int i = 0; i < 5; i++) {
             try {
                 grades[i] = Double.parseDouble(gradeFields[i].getText());
