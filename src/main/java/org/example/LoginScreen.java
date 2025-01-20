@@ -18,7 +18,7 @@ public class LoginScreen {
     private JButton loginButton;
 
     public LoginScreen() {
-        // Configura la interfaz gráfica del login
+        
         panel = new JPanel();
         panel.setLayout(new GridLayout(10, 12));
 
@@ -34,7 +34,7 @@ public class LoginScreen {
         panel.add(passwordField);
         panel.add(loginButton);
 
-        // Configura la acción del botón de login
+       
         loginButton.addActionListener(e -> {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
